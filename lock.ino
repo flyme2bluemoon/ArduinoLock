@@ -1,3 +1,10 @@
+// Forked from Electronics Idiot
+// https://www.youtube.com/watch?v=7HeT4wvgz7w
+// in collaboration with LiveOverflow
+// https://www.youtube.com/watch?v=RcBnhbOqDps
+// Recreated by flyme2bluemoon
+// https://www.tinkercad.com/things/9yUZKvPDhkg-arduinolock/editel?sharecode=mHfyCQHjIk26RpcYSGKjc4ty2YZtxTk4AlNnR1oZXmk
+
 #define RED 9
 #define GREEN 8
 #define BLUE 7
