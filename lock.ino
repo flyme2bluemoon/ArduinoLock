@@ -1,7 +1,7 @@
 #define RED 9
 #define GREEN 8
 #define BLUE 7
-#define LOCK 6
+// #define LOCK 6
 
 const int pin[] = {3, 1, 3, 2, 0}; // The code to unlock
 const int pinLength = sizeof(pin) / sizeof(int); // Length of the code
@@ -19,7 +19,7 @@ void setup() {
   pinMode(RED, OUTPUT);
   pinMode(GREEN, OUTPUT);
   pinMode(BLUE, OUTPUT);
-  pinMode(LOCK, OUTPUT);
+  // pinMode(LOCK, OUTPUT);
 
   // Set buttons to inputs
   for (int i = 0; i < buttonsLength; ++i) {
@@ -42,7 +42,7 @@ void loop() {
       if (++index == pinLength) { // Increment digit index and check if last digit
         if (correct) { // Unlock and show green LED if code is correct
           digitalWrite(GREEN, HIGH);
-          digitalWrite(LOCK, HIGH);
+          // digitalWrite(LOCK, HIGH);
           attempt = 0; // Reset timer
           delay(1000); // Leave LED/motor on for 1 second
         } else { // The code is incorrect
@@ -60,7 +60,7 @@ void loop() {
 
         // Turn off LED/motor
         digitalWrite(GREEN, LOW);
-        digitalWrite(LOCK, LOW);
+        // digitalWrite(LOCK, LOW);
         digitalWrite(RED, LOW);
 
         // Reset for next attempt
