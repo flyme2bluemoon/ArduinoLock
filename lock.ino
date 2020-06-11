@@ -3,7 +3,7 @@
 #define BLUE 7
 #define LOCK 6
 
-const int pin[] = {0, 0, 1, 2, 3}; // The code to unlock
+const int pin[] = {3, 1, 3, 2, 0}; // The code to unlock
 const int pinLength = sizeof(pin) / sizeof(int); // Length of the code
 
 const int buttons[] = {13, 12, 11, 10}; // Arduino pins the buttons are connected to
