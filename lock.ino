@@ -32,6 +32,10 @@ void setup() {
   for (int i = 0; i < buttonsLength; ++i) {
     pinMode(buttons[i], INPUT);
   }
+
+  for (int i = 0; i < buttonsLength; ++i) {
+    pressed[i] = false;
+  }
 }
 
 void loop() {
